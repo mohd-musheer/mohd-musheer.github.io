@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>VectorForgeML — C++ Machine Learning Framework | Mohd. Musheer</title>
+  <meta name="title" content="VectorForgeML — C++ Machine Learning Framework | Mohd. Musheer">
+  <meta name="description" content="VectorForgeML is a production-grade machine learning framework built from scratch in C++ with BLAS/LAPACK hardware acceleration, OpenMP parallelism, 9+ algorithms, and zero-copy R integration via Rcpp.">
+  <meta name="keywords" content="VectorForgeML, C++ ML Framework, Machine Learning, BLAS, LAPACK, OpenMP, Rcpp, R Package, Linear Regression, Random Forest, PCA, K-Means, Decision Tree, Mohd Musheer">
+  <meta name="author" content="Mohd. Musheer">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://musheer.me/projects/vectorforgeml.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://musheer.me/projects/vectorforgeml.html">
+  <meta property="og:title" content="VectorForgeML — C++ Machine Learning Framework | Mohd. Musheer">
+  <meta property="og:description" content="Production-grade ML framework built from scratch in C++ with BLAS/LAPACK acceleration, OpenMP parallelism, and zero-copy R integration.">
+  <meta property="og:image" content="https://musheer.me/assets/images/profilePhoto.png">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://musheer.me/projects/vectorforgeml.html">
+  <meta name="twitter:title" content="VectorForgeML — C++ Machine Learning Framework | Mohd. Musheer">
+  <meta name="twitter:description" content="Production-grade ML framework built from scratch in C++ with BLAS/LAPACK acceleration, OpenMP parallelism, and zero-copy R integration.">
+  <meta name="twitter:image" content="https://musheer.me/assets/images/profilePhoto.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "VectorForgeML",
+    "description": "A production-grade machine learning framework built from scratch in C++ with BLAS/LAPACK hardware acceleration, OpenMP parallelism, 9+ algorithms, and zero-copy R integration via Rcpp.",
+    "author": {
+      "@type": "Person",
+      "name": "Mohd. Musheer",
+      "url": "https://musheer.me"
+    },
+    "programmingLanguage": ["C++", "R"],
+    "codeRepository": "https://github.com/mohd-musheer/VectorForgeML",
+    "runtimePlatform": "R",
+    "operatingSystem": "Cross-platform",
+    "license": "https://opensource.org/licenses/MIT",
+    "keywords": "machine learning, C++, BLAS, LAPACK, OpenMP, Rcpp, R package, linear regression, random forest, PCA, k-means"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ======== NAVIGATION ======== -->
+  <nav class="nav project-nav" id="nav">
+    <div class="container nav-inner">
+      <a href="/" class="nav-logo">Mohd. Musheer</a>
+      <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <a href="/#projects" class="btn btn-ghost">Back to Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ======== PROJECT HERO ======== -->
+    <section class="project-page-hero">
+      <div class="container">
+        <span class="hero-label">ML Frameworks</span>
+        <h1>VectorForgeML</h1>
+        <p class="project-tagline">Production-grade ML framework built from scratch in C++</p>
+        <div class="project-actions">
+          <a href="https://github.com/mohd-musheer/VectorForgeML" class="btn btn-primary" target="_blank" rel="noopener">View on GitHub</a>
+          <a href="#research" class="btn btn-outline">Read the Paper</a>
+          <a href="https://www.kaggle.com/almusheer" class="btn btn-ghost" target="_blank" rel="noopener">Kaggle Notebooks</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== METRICS BAR ======== -->
+    <section class="project-metrics-bar">
+      <div class="container">
+        <div class="metrics-row">
+          <div class="metric-tile">
+            <span class="metric-tile-value">9+</span>
+            <span class="metric-tile-label">Algorithms</span>
+          </div>
+          <div class="metric-tile">
+            <span class="metric-tile-value">C++/R</span>
+            <span class="metric-tile-label">Languages</span>
+          </div>
+          <div class="metric-tile">
+            <span class="metric-tile-value">BLAS</span>
+            <span class="metric-tile-label">Hardware Accel.</span>
+          </div>
+          <div class="metric-tile">
+            <span class="metric-tile-value">OpenMP</span>
+            <span class="metric-tile-label">Parallelism</span>
+          </div>
+          <div class="metric-tile">
+            <span class="metric-tile-value">Zero-Copy</span>
+            <span class="metric-tile-label">R Bridge</span>
+          </div>
+          <div class="metric-tile">
+            <span class="metric-tile-value">--</span>
+            <span class="metric-tile-label">GitHub Stars</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== PROJECT CONTENT ======== -->
+    <div class="project-content">
+      <div class="container container-narrow">
+
+        <!-- Overview -->
+        <h2>Overview</h2>
+        <p>A next-generation machine learning framework bridging R's simplicity with C++'s raw performance. Features 9+ algorithms, BLAS/LAPACK hardware acceleration, OpenMP parallelism, and zero-copy R integration via Rcpp.</p>
+        <p>VectorForgeML was designed to solve a real problem: R is excellent for statistical computing and data exploration, but its interpreted nature creates a performance ceiling for large-scale ML workloads. By pushing all compute-intensive operations into optimized C++ while maintaining an intuitive R interface, VectorForgeML delivers the best of both worlds.</p>
+
+        <!-- Architecture -->
+        <h2>Architecture</h2>
+        <p>The framework is organized into three distinct layers, each responsible for a specific concern. Data flows from the R user interface through the zero-copy Rcpp bridge into the high-performance C++ core.</p>
+
+        <div class="arch-diagram">
+          <div class="arch-box">
+            <div class="arch-box-title">R Layer</div>
+            <div class="arch-box-desc">Pipeline API, Metrics &amp; Evaluation, Data Preprocessing, User Interface</div>
+          </div>
+          <span class="arch-arrow">&rarr;</span>
+          <div class="arch-box">
+            <div class="arch-box-title">Rcpp Bridge</div>
+            <div class="arch-box-desc">Zero-Copy Transfer, NumericMatrix to double*, No Data Duplication, Type-safe Bindings</div>
+          </div>
+          <span class="arch-arrow">&rarr;</span>
+          <div class="arch-box">
+            <div class="arch-box-title">C++ Core</div>
+            <div class="arch-box-desc">BLAS/LAPACK Math, OpenMP Threading, Raw Pointer Graphs, Custom Allocators</div>
+          </div>
+        </div>
+
+        <!-- Algorithms Implemented -->
+        <h2>Algorithms Implemented</h2>
+        <p>Every algorithm is implemented from scratch in C++ with no external ML library dependencies. Each implementation leverages hardware-specific optimizations where applicable.</p>
+
+        <div class="algo-grid">
+          <div class="algo-card">
+            <div class="algo-header">
+              <span class="algo-name">Linear Regression</span>
+              <span class="algo-type supervised">Supervised</span>
+            </div>
+            <p class="algo-impl">OLS via BLAS/LAPACK matrix operations. Hardware-accelerated normal equation solver.</p>
+          </div>
+
+          <div class="algo-card">
+            <div class="algo-header">
+              <span class="algo-name">Logistic Regression</span>
+              <span class="algo-type supervised">Supervised</span>
+            </div>
+            <p class="algo-impl">Gradient descent with sigmoid activation. Configurable learning rate and epochs.</p>
+          </div>
+
+          <div class="algo-card">
+            <div class="algo-header">
+              <span class="algo-name">Ridge Regression</span>
+              <span class="algo-type supervised">Supervised</span>
+            </div>
+            <p class="algo-impl">L2-regularized regression via Cholesky decomposition. Prevents overfitting with lambda tuning.</p>
+          </div>
+
+          <div class="algo-card">
+            <div class="algo-header">
+              <span class="algo-name">Softmax Regression</span>
+              <span class="algo-type supervised">Supervised</span>
+            </div>
+            <p class="algo-impl">Multi-class classification with Log-Sum-Exp numerical stability trick.</p>
+          </div>
+
+          <div class="algo-card">
+            <div class="algo-header">
+              <span class="algo-name">Decision Tree</span>
+              <span class="algo-type supervised">Supervised</span>
+            </div>
+            <p class="algo-impl">Recursive partitioning with raw C++ graph pointers. Custom node allocation.</p>
+          </div>
+
+          <div class="algo-card">
+            <div class="algo-header">
+              <span class="algo-name">Random Forest</span>
+              <span class="algo-type supervised">Supervised</span>
+            </div>
+            <p class="algo-impl">Parallelized ensemble via OpenMP. Multi-core tree training with bagging.</p>
+          </div>
+
+          <div class="algo-card">
+            <div class="algo-header">
+              <span class="algo-name">K-Nearest Neighbors</span>
+              <span class="algo-type supervised">Supervised</span>
+            </div>
+            <p class="algo-impl">Optimized with std::partial_sort for efficient k-selection without full sort.</p>
+          </div>
+
+          <div class="algo-card">
+            <div class="algo-header">
+              <span class="algo-name">PCA</span>
+              <span class="algo-type unsupervised">Unsupervised</span>
+            </div>
+            <p class="algo-impl">Principal Component Analysis via SVD/Eigen decomposition. LAPACK-accelerated.</p>
+          </div>
+
+          <div class="algo-card">
+            <div class="algo-header">
+              <span class="algo-name">K-Means Clustering</span>
+              <span class="algo-type unsupervised">Unsupervised</span>
+            </div>
+            <p class="algo-impl">Lloyd's algorithm with efficient centroid updates and convergence detection.</p>
+          </div>
+        </div>
+
+        <!-- Technical Deep Dive -->
+        <h2>Technical Deep Dive</h2>
+        <p>Under the hood, VectorForgeML makes deliberate low-level engineering decisions to maximize throughput while maintaining correctness and a clean API surface.</p>
+
+        <div class="deepdive-grid">
+
+          <!-- BLAS/LAPACK Integration -->
+          <div class="deepdive-item">
+            <h3>BLAS/LAPACK Integration</h3>
+            <p>All linear algebra operations are routed through BLAS and LAPACK, meaning matrix multiplications, decompositions, and solvers run on hardware-optimized routines rather than naive loops. This single decision delivers order-of-magnitude speedups for algorithms like Linear Regression, Ridge Regression, and PCA.</p>
+            <div class="code-block">
+<pre><span class="comment">// Naive O(n^3) matrix multiply</span>
+<span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; n; i++)
+  <span class="keyword">for</span> (<span class="keyword">int</span> j = 0; j &lt; n; j++)
+    <span class="keyword">for</span> (<span class="keyword">int</span> k = 0; k &lt; n; k++)
+      C[i][j] += A[i][k] * B[k][j];
+
+<span class="comment">// BLAS: single call, hardware-optimized</span>
+<span class="fn">cblas_dgemm</span>(CblasRowMajor, CblasNoTrans,
+  CblasNoTrans, n, n, n, <span class="accent-text">1.0</span>,
+  A, n, B, n, <span class="accent-text">0.0</span>, C, n);</pre>
+            </div>
+          </div>
+
+          <!-- OpenMP Parallelism -->
+          <div class="deepdive-item">
+            <h3>OpenMP Parallelism</h3>
+            <p>Ensemble methods like Random Forest benefit directly from thread-level parallelism. Each tree in the forest is trained independently, making this a naturally parallelizable workload. OpenMP distributes tree training across all available CPU cores with minimal synchronization overhead.</p>
+            <div class="code-block">
+<pre><span class="comment">// Parallel tree training in Random Forest</span>
+<span class="keyword">#pragma</span> omp parallel for schedule(dynamic)
+<span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; n_trees; i++) {
+  <span class="comment">// Each thread trains one tree</span>
+  <span class="keyword">auto</span> sample = <span class="fn">bootstrap_sample</span>(data);
+  trees[i] = <span class="fn">build_tree</span>(sample,
+    max_depth, min_samples);
+}
+
+<span class="comment">// Aggregate predictions across trees</span>
+<span class="keyword">auto</span> predictions = <span class="fn">majority_vote</span>(trees, X_test);</pre>
+            </div>
+          </div>
+
+          <!-- Zero-Copy R Bridge -->
+          <div class="deepdive-item">
+            <h3>Zero-Copy R Bridge</h3>
+            <p>The Rcpp bridge eliminates data serialization overhead by sharing memory directly between R and C++. R's NumericMatrix is converted to a raw double pointer without copying, meaning even gigabyte-scale datasets incur zero transfer cost when crossing the language boundary.</p>
+            <div class="code-block">
+<pre><span class="comment">// Zero-copy: R matrix -&gt; C++ pointer</span>
+<span class="comment">// [[Rcpp::export]]</span>
+Rcpp::NumericVector <span class="fn">cpp_predict</span>(
+    Rcpp::NumericMatrix X) {
+
+  <span class="comment">// Direct pointer access, no copy</span>
+  <span class="keyword">double</span>* ptr = <span class="fn">REAL</span>(X);
+  <span class="keyword">int</span> nrow = X.<span class="fn">nrow</span>();
+  <span class="keyword">int</span> ncol = X.<span class="fn">ncol</span>();
+
+  <span class="comment">// Run prediction on raw memory</span>
+  <span class="keyword">return</span> <span class="fn">predict_internal</span>(ptr, nrow, ncol);
+}</pre>
+            </div>
+          </div>
+
+          <!-- Pipeline Architecture -->
+          <div class="deepdive-item">
+            <h3>Pipeline Architecture</h3>
+            <p>Inspired by scikit-learn's Pipeline API, VectorForgeML provides a composable pipeline system in R that chains preprocessing, training, and evaluation into a single reproducible workflow. This pattern prevents data leakage and ensures consistent transformations across train and test sets.</p>
+            <div class="code-block">
+<pre><span class="comment"># Scikit-learn-style pipeline in R</span>
+pipeline <span class="keyword">&lt;-</span> <span class="fn">VFPipeline</span>(
+  <span class="fn">StandardScaler</span>(),
+  <span class="fn">PCA</span>(n_components = <span class="accent-text">10</span>),
+  <span class="fn">RandomForest</span>(
+    n_trees = <span class="accent-text">100</span>,
+    max_depth = <span class="accent-text">12</span>
+  )
+)
+
+<span class="comment"># Fit and predict in one call</span>
+pipeline<span class="keyword">$</span><span class="fn">fit</span>(X_train, y_train)
+preds <span class="keyword">&lt;-</span> pipeline<span class="keyword">$</span><span class="fn">predict</span>(X_test)</pre>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Code Examples -->
+        <h2>Code Examples</h2>
+        <p>VectorForgeML exposes a clean, high-level R API. All heavy computation happens in C++ behind the scenes.</p>
+
+        <div class="code-examples-grid">
+          <div>
+            <div class="code-label">Classification</div>
+            <div class="code-block">
+<pre><span class="keyword">library</span>(VectorForgeML)
+
+<span class="comment"># Load and split data</span>
+data <span class="keyword">&lt;-</span> <span class="fn">read.csv</span>(<span class="string">"dataset.csv"</span>)
+split <span class="keyword">&lt;-</span> <span class="fn">train_test_split</span>(data, ratio = <span class="accent-text">0.8</span>)
+
+<span class="comment"># Train Random Forest classifier</span>
+model <span class="keyword">&lt;-</span> <span class="fn">RandomForest</span>(
+  n_trees = <span class="accent-text">200</span>,
+  max_depth = <span class="accent-text">15</span>,
+  min_samples = <span class="accent-text">5</span>
+)
+model<span class="keyword">$</span><span class="fn">fit</span>(split<span class="keyword">$</span>X_train, split<span class="keyword">$</span>y_train)
+
+<span class="comment"># Evaluate</span>
+preds <span class="keyword">&lt;-</span> model<span class="keyword">$</span><span class="fn">predict</span>(split<span class="keyword">$</span>X_test)
+<span class="fn">accuracy</span>(split<span class="keyword">$</span>y_test, preds)
+<span class="fn">confusion_matrix</span>(split<span class="keyword">$</span>y_test, preds)</pre>
+            </div>
+          </div>
+          <div>
+            <div class="code-label">Regression</div>
+            <div class="code-block">
+<pre><span class="keyword">library</span>(VectorForgeML)
+
+<span class="comment"># Load and split data</span>
+data <span class="keyword">&lt;-</span> <span class="fn">read.csv</span>(<span class="string">"housing.csv"</span>)
+split <span class="keyword">&lt;-</span> <span class="fn">train_test_split</span>(data, ratio = <span class="accent-text">0.8</span>)
+
+<span class="comment"># Train Ridge Regression</span>
+model <span class="keyword">&lt;-</span> <span class="fn">RidgeRegression</span>(
+  lambda = <span class="accent-text">0.01</span>
+)
+model<span class="keyword">$</span><span class="fn">fit</span>(split<span class="keyword">$</span>X_train, split<span class="keyword">$</span>y_train)
+
+<span class="comment"># Evaluate</span>
+preds <span class="keyword">&lt;-</span> model<span class="keyword">$</span><span class="fn">predict</span>(split<span class="keyword">$</span>X_test)
+<span class="fn">rmse</span>(split<span class="keyword">$</span>y_test, preds)
+<span class="fn">r_squared</span>(split<span class="keyword">$</span>y_test, preds)</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research Paper -->
+        <h2 id="research">Research Paper</h2>
+
+        <div class="research-card">
+          <span class="badge badge-success">Published</span>
+          <h3>VectorForgeML: A Production-Grade Machine Learning Framework in C++</h3>
+          <p class="research-author">Mohd. Musheer</p>
+          <blockquote class="research-abstract">This paper presents VectorForgeML, a modular machine learning framework built entirely from scratch in C++ with R bindings. The framework implements 9+ supervised and unsupervised algorithms including Linear Regression, Logistic Regression, Ridge Regression, Softmax Regression, Decision Trees, Random Forests, KNN, PCA, and K-Means Clustering. Key architectural decisions include BLAS/LAPACK integration for hardware-accelerated linear algebra, OpenMP for multi-core parallelism, and zero-copy data exchange between R and C++ via Rcpp.</blockquote>
+          <div class="research-actions">
+            <a href="https://github.com/mohd-musheer/VectorForgeML" class="btn btn-primary" target="_blank" rel="noopener">View Full Paper &amp; Source</a>
+          </div>
+        </div>
+
+        <!-- Installation -->
+        <h2>Installation</h2>
+        <p>VectorForgeML is distributed as an R package and can be installed directly from GitHub using the remotes package.</p>
+
+        <div class="code-label">Step 1: Install remotes (if not already installed)</div>
+        <div class="code-block">
+<pre><span class="fn">install.packages</span>(<span class="string">"remotes"</span>)</pre>
+        </div>
+
+        <div class="code-label" style="margin-top: var(--space-4);">Step 2: Install VectorForgeML from GitHub</div>
+        <div class="code-block">
+<pre>remotes::<span class="fn">install_github</span>(<span class="string">"mohd-musheer/VectorForgeML"</span>)</pre>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ======== BACK LINK ======== -->
+    <section class="project-back">
+      <div class="container">
+        <a href="/" class="btn btn-outline">Back to Portfolio</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Mohd. Musheer. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/mohd-musheer" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/mohdmusheer" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../main.js" defer></script>
+</body>
+</html>
