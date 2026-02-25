@@ -1,55 +1,85 @@
 # Mohd. Musheer
-### AI / Machine Learning Engineer
 
-I design and ship production-grade AI/ML systems with a systems-first engineering mindset.
-My work focuses on systems-level machine learning, high-performance C++ development, and transformer fine-tuning for real-world NLP tasks.
-I build frameworks and infrastructure for performance, reliability, and scale in deployment environments.
-Creator of **VectorForgeML**, a C++ machine learning framework built for high-performance computation.
+**AI / Machine Learning Engineer**
+
+I build production-grade machine learning systems from first principles — not just models. My work spans systems-level ML in C++, transformer-based NLP, computer vision, and scalable AI deployment. Creator of **VectorForgeML**, a C++ ML framework with BLAS/LAPACK hardware acceleration and OpenMP parallelism.
+
+25+ ML/AI projects. 1 published research paper. 1 ML framework built from scratch.
+
+---
 
 ## Core Focus
-- Systems-Level Machine Learning
-- High-Performance Computing (BLAS/LAPACK, OpenMP)
-- Transformer-Based NLP
-- ML Framework Design
-- Production Deployment (FastAPI, Docker)
+
+- **Systems-Level Machine Learning** — Building ML algorithms from scratch in C++ with raw pointer optimization and memory-efficient data structures
+- **High-Performance Computing** — BLAS/LAPACK hardware-accelerated linear algebra, OpenMP multi-core parallelism
+- **Transformer-Based NLP** — Fine-tuning PRIMERA, LED, and T5 architectures for summarization and classification tasks
+- **ML Framework Design** — Modular pipeline architecture with zero-copy interoperability between R and C++ via Rcpp
+- **Production Deployment** — End-to-end ML systems with FastAPI, Docker containerization, and CI/CD pipelines
+
+---
 
 ## Featured Projects
-- **[VectorForgeML](https://github.com/mohd-musheer/VectorForgeML)**  
-  Production-grade C++ ML framework with BLAS/LAPACK acceleration, OpenMP parallelism, and modular algorithm design.
 
-- **[Indian News Summarizer](https://github.com/mohd-musheer/News-Summarization-AI)**  
-  Transformer-based news summarization system with fine-tuned architectures, achieving **ROUGE-1: 71.43%** and strong semantic quality.
+**[VectorForgeML](https://github.com/mohd-musheer/VectorForgeML)** — Production-grade ML framework built from scratch in C++ with 9+ algorithms, BLAS/LAPACK acceleration, OpenMP parallelism, and zero-copy R integration via Rcpp.
 
-- **[AI Resume Ranking System](https://github.com/mohd-musheer/AI-Resume-Rranking-System)**  
-  NLP-driven resume ranking pipeline for candidate-job matching using vectorization and similarity scoring.
+**[Indian News Summarization AI](https://github.com/mohd-musheer/News-Summarization-AI)** — Deep learning news summarizer achieving ROUGE-1: 71.43% and BERTScore: 0.93 using PRIMERA and LED transformer architectures. Dockerized with FastAPI.
 
-- **[Employee Attrition Predictor](https://github.com/mohd-musheer/Employee-Attrition-Model)**  
-  End-to-end predictive analytics pipeline for attrition risk modeling with deployment-ready architecture.
+**[AI Resume Ranking System](https://github.com/mohd-musheer/AI-Resume-Rranking-System)** — NLP-powered resume screening system processing 1000+ resumes using TF-IDF vectorization, cosine similarity scoring, and automated skill gap analysis.
 
-## Internship
-**Machine Learning Intern - Future Interns (Jan 2026)**
-- Built an AI resume ranking system processing **1000+ resumes**.
-- Developed NLP classification systems for real-world screening and support workflows.
-- Evaluated models using **Accuracy, Precision, Recall, and F1-score**.
-- Awarded a **Letter of Recommendation** for project delivery quality.
+**[Employee Attrition Predictor](https://github.com/mohd-musheer/Employee-Attrition-Model)** — End-to-end ML pipeline for predicting employee turnover with 35+ engineered features, SMOTE class balancing, and multi-model evaluation.
+
+**[YouTube Sentiment Analysis](https://github.com/mohd-musheer/YouTube-Comments-Sentiment-Analysis)** — NLP-based YouTube comment analysis for mental health profiling using sentiment classification patterns.
+
+**[CIFAR-10 Image Classifier](https://github.com/mohd-musheer/CIFAR-10-Image-Classification-using-CNN-PyTorch)** — CNN-based image classification built from scratch in PyTorch with data augmentation and batch normalization.
+
+---
+
+## Experience
+
+**Machine Learning Intern — Future Interns** (January 2026)
+
+Built three production-grade ML systems during an intensive internship:
+
+- **AI Resume Ranking System** — Processed 1000+ resumes with TF-IDF vectorization and cosine similarity for automated candidate-job matching
+- **Support Ticket Classifier** — NLP-based multi-class classification using ensemble methods (Random Forest + Gradient Boosting) with precision/recall/F1 evaluation
+- **Sales Demand Forecasting** — Time-series prediction using Random Forest Regressor with rolling statistics and lag variable feature engineering
+
+Received **Letter of Recommendation** and Certificate of Completion (CIN: FIT/JAN26/ML4913).
+
+---
 
 ## Research
-**VectorForgeML Research Paper**
-- Framework implementation in C++ for performance-critical ML workflows.
-- Hardware-accelerated linear algebra via **BLAS/LAPACK**.
-- Parallel execution support through **OpenMP**.
-- Zero-copy **R <-> C++** interoperability bridge for efficient data exchange.
+
+**VectorForgeML: A Production-Grade Machine Learning Framework in C++**
+
+Published research paper covering the design and implementation of a modular ML framework:
+
+- 9+ supervised and unsupervised algorithms implemented from scratch in C++
+- BLAS/LAPACK integration for hardware-accelerated matrix operations
+- OpenMP parallelism for multi-core ensemble training
+- Zero-copy data bridge between R and C++ via Rcpp
+
+---
 
 ## Technical Stack
-- **Languages:** Python | C++ | R | SQL
-- **ML/DL:** Scikit-learn | PyTorch | Transformers
-- **NLP:** TF-IDF | Cosine Similarity | Hugging Face
-- **Deployment:** FastAPI | Docker | Render
-- **Tools:** Git | GitHub | VS Code | Jupyter
 
-## Contact & Links
-- **LinkedIn:** https://www.linkedin.com/in/mohdmusheer
-- **GitHub:** https://github.com/mohd-musheer
-- **Kaggle:** https://www.kaggle.com/almusheer
-- **Docker:** https://hub.docker.com/u/mohdmusheer
-- **Email:** musheerayan@gmail.com
+| Category | Technologies |
+|----------|-------------|
+| **Languages** | Python, C++, R, JavaScript, SQL |
+| **ML / Deep Learning** | PyTorch, Scikit-learn, Transformers, TF-IDF, Ensemble Methods |
+| **NLP** | PRIMERA, LED, T5, HuggingFace, Cosine Similarity, BERTScore, ROUGE |
+| **Deployment** | FastAPI, Docker, Render, GitHub Actions, CI/CD |
+| **Data Science** | Pandas, NumPy, Matplotlib, Seaborn, Feature Engineering |
+| **HPC** | BLAS/LAPACK, OpenMP, Rcpp |
+| **Tools** | Git, GitHub, VS Code, Jupyter, Power BI |
+
+---
+
+## Links
+
+- **Portfolio**: [musheer.me](https://musheer.me)
+- **LinkedIn**: [linkedin.com/in/mohdmusheer](https://www.linkedin.com/in/mohdmusheer)
+- **GitHub**: [github.com/mohd-musheer](https://github.com/mohd-musheer)
+- **Kaggle**: [kaggle.com/almusheer](https://www.kaggle.com/almusheer)
+- **Docker Hub**: [hub.docker.com/u/mohdmusheer](https://hub.docker.com/u/mohdmusheer)
+- **Email**: musheerayan@gmail.com

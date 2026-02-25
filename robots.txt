@@ -1,4 +1,12 @@
+# Mohd. Musheer — AI/ML Engineer Portfolio
+# https://musheer.me
+
 User-agent: *
 Allow: /
+Disallow: /tmpclaude-*
 
+# Sitemaps
 Sitemap: https://musheer.me/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+# Crawl-delay: 1
