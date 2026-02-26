@@ -80,7 +80,7 @@
   --z-base: 1;
   --z-dropdown: 100;
   --z-navbar: 500;
-  --z-chatbot: 900;
+  --z-chatbot: 1000;
   --z-overlay: 1000;
 
   /* Nav */
@@ -132,6 +132,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+  overflow-x: hidden;
 }
 
 body {
@@ -720,12 +721,14 @@ pre code {
 /* --- 6a. Hero --- */
 .hero {
   min-height: calc(100vh - 64px);
+  min-height: calc(100svh - 64px);
+  min-height: calc(100dvh - 64px);
   display: flex;
   align-items: center;
   padding-top: calc(64px + var(--space-8));
   padding-bottom: var(--space-16);
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Gradient mesh background */
@@ -2263,10 +2266,44 @@ pre code {
   }
 }
 
-/* Chatbot mobile */
-@media (max-width: 480px) {
+/* Mobile breakpoint: max-width 767px */
+@media (max-width: 767px) {
+  .hero {
+    min-height: auto;
+    padding-top: calc(64px + var(--space-6));
+    padding-bottom: var(--space-10);
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    gap: var(--space-8);
+    text-align: center;
+  }
+
+  .hero-content {
+    text-align: center;
+    padding: 0 var(--space-2);
+  }
+
+  .hero-headline {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+
+  .hero-sub {
+    font-size: 0.875rem;
+  }
+
+  .hero-summary {
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    padding: 0 var(--space-2);
+  }
+
   .hero-actions {
+    flex-direction: column;
     width: 100%;
+    gap: var(--space-3);
   }
 
   .hero-actions .btn {
@@ -2277,13 +2314,44 @@ pre code {
   .hero-framework {
     max-width: 100%;
     text-align: center;
-    border-radius: 999px;
+    border-radius: var(--radius-lg);
     flex-wrap: wrap;
     justify-content: center;
+    padding: var(--space-3) var(--space-4);
+    font-size: 0.875rem;
   }
 
   .hero-framework-tail {
     white-space: normal;
+  }
+
+  .hero-socials {
+    justify-content: center;
+  }
+
+  .hero-photo-wrapper {
+    order: -1;
+  }
+
+  .hero-photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-photo-glow {
+    inset: -30px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .hero-headline {
+    font-size: 1.75rem;
+  }
+
+  .hero-photo {
+    width: 160px;
+    height: 160px;
   }
 
   .chatbot-window {
