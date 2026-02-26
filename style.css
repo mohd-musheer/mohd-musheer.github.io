@@ -692,7 +692,7 @@ pre code {
   align-items: center;
   justify-content: center;
   gap: var(--space-8);
-  z-index: var(--z-overlay);
+  z-index: calc(var(--z-overlay) + 2);
   opacity: 0;
   visibility: hidden;
   transition: opacity var(--transition-base), visibility var(--transition-base);
@@ -720,15 +720,12 @@ pre code {
 
 /* --- 6a. Hero --- */
 .hero {
-  min-height: calc(100vh - 64px);
-  min-height: calc(100svh - 64px);
-  min-height: calc(100dvh - 64px);
   display: flex;
   align-items: center;
   padding-top: calc(64px + var(--space-8));
   padding-bottom: var(--space-16);
   position: relative;
-  overflow-x: hidden;
+  overflow: visible;
 }
 
 /* Gradient mesh background */
