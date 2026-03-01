@@ -89,6 +89,7 @@
       <div class="container">
         <span class="hero-label">ML Frameworks</span>
         <h1>VectorForgeML</h1>
+        <span class="badge badge-cran">Official CRAN Package</span>
         <p class="project-tagline">Production-grade ML framework built from scratch in C++</p>
         <div class="project-actions">
           <a href="https://github.com/mohd-musheer/VectorForgeML" class="btn btn-primary" target="_blank" rel="noopener">View on GitHub</a>
@@ -136,7 +137,7 @@
 
         <!-- Overview -->
         <h2>Overview</h2>
-        <p>A next-generation machine learning framework bridging R's simplicity with C++'s raw performance. Features 9+ algorithms, BLAS/LAPACK hardware acceleration, OpenMP parallelism, and zero-copy R integration via Rcpp.</p>
+        <p>VectorForgeML is officially published on CRAN and distributed as a stable, production-grade R package. A next-generation machine learning framework bridging R's simplicity with C++'s raw performance, it is CRAN-verified, research-ready, and fully integrated into the official R ecosystem. Features 9+ algorithms, BLAS/LAPACK hardware acceleration, OpenMP parallelism, and zero-copy R integration via Rcpp.</p>
         <p>VectorForgeML was designed to solve a real problem: R is excellent for statistical computing and data exploration, but its interpreted nature creates a performance ceiling for large-scale ML workloads. By pushing all compute-intensive operations into optimized C++ while maintaining an intuitive R interface, VectorForgeML delivers the best of both worlds.</p>
 
         <!-- Architecture -->
@@ -385,22 +386,40 @@ preds <span class="keyword">&lt;-</span> model<span class="keyword">$</span><spa
           <p class="research-author">Mohd. Musheer</p>
           <blockquote class="research-abstract">This paper presents VectorForgeML, a modular machine learning framework built entirely from scratch in C++ with R bindings. The framework implements 9+ supervised and unsupervised algorithms including Linear Regression, Logistic Regression, Ridge Regression, Softmax Regression, Decision Trees, Random Forests, KNN, PCA, and K-Means Clustering. Key architectural decisions include BLAS/LAPACK integration for hardware-accelerated linear algebra, OpenMP for multi-core parallelism, and zero-copy data exchange between R and C++ via Rcpp.</blockquote>
           <div class="research-actions">
-            <a href="https://github.com/mohd-musheer/VectorForgeML" class="btn btn-primary" target="_blank" rel="noopener">View Full Paper &amp; Source</a>
+            <a href="https://github.com/mohd-musheer/VectorForgeML/blob/main/paper/VectorForgeML_Paper.pdf" class="btn btn-primary" target="_blank" rel="noopener">View Full Paper &amp; Source</a>
           </div>
+        </div>
+
+        <!-- CRAN Status -->
+        <div class="cran-status-card">
+          <div class="cran-status-header">
+            <span class="cran-status-icon">&#10003;</span>
+            <strong>Officially Published on CRAN</strong>
+          </div>
+          <p>VectorForgeML has been accepted into CRAN, the official R package repository. It is available as a stable release and can be installed via the standard R installation workflow.</p>
+          <a href="https://cran.r-project.org/package=VectorForgeML" class="cran-link" target="_blank" rel="noopener">View on CRAN &rarr;</a>
         </div>
 
         <!-- Installation -->
         <h2>Installation</h2>
-        <p>VectorForgeML is distributed as an R package and can be installed directly from GitHub using the remotes package.</p>
+        <p>VectorForgeML is available on CRAN and can be installed directly from any R environment using the standard package installer.</p>
 
-        <div class="code-label">Step 1: Install remotes (if not already installed)</div>
+        <div class="code-label">Install from CRAN (Recommended)</div>
         <div class="code-block">
-<pre><span class="fn">install.packages</span>(<span class="string">"remotes"</span>)</pre>
+<pre><span class="fn">install.packages</span>(<span class="string">"VectorForgeML"</span>)
+<span class="keyword">library</span>(VectorForgeML)</pre>
         </div>
 
-        <div class="code-label" style="margin-top: var(--space-4);">Step 2: Install VectorForgeML from GitHub</div>
+        <div class="code-label" style="margin-top: var(--space-4);">Verify installed functions</div>
         <div class="code-block">
-<pre>remotes::<span class="fn">install_github</span>(<span class="string">"mohd-musheer/VectorForgeML"</span>)</pre>
+<pre><span class="fn">ls</span>(<span class="string">"package:VectorForgeML"</span>)</pre>
+        </div>
+
+        <div class="code-label" style="margin-top: var(--space-8);">Install Development Version (GitHub)</div>
+        <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: var(--space-3);">For the latest development features not yet on CRAN:</p>
+        <div class="code-block">
+<pre><span class="fn">install.packages</span>(<span class="string">"remotes"</span>)
+remotes::<span class="fn">install_github</span>(<span class="string">"mohd-musheer/VectorForgeML"</span>)</pre>
         </div>
 
       </div>

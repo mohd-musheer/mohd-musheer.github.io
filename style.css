@@ -426,6 +426,86 @@ main > #experience.section {
   box-shadow: 0 10px 22px rgba(99, 102, 241, 0.35);
 }
 
+.badge-cran {
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* CRAN Status Card */
+.cran-status-card {
+  background: var(--bg-elevated);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  border-left: 3px solid #22c55e;
+  border-radius: var(--radius-lg);
+  padding: var(--space-5) var(--space-6);
+  margin-top: var(--space-10);
+  margin-bottom: var(--space-2);
+  box-shadow: var(--shadow-sm);
+}
+
+.cran-status-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.cran-status-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.cran-status-card p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--space-3);
+}
+
+.cran-link {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #22c55e;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.cran-link:hover {
+  color: #16a34a;
+  text-decoration: underline;
+}
+
+/* CRAN note on project card */
+.project-cran-note {
+  font-size: 0.8125rem;
+  color: #22c55e;
+  font-weight: 500;
+  margin-top: var(--space-1);
+}
+
+/* Project hero CRAN badge */
+.project-page-hero .badge-cran {
+  display: inline-block;
+  margin-bottom: var(--space-3);
+  position: relative;
+}
+
 /* --- Cards --- */
 .card {
   background: var(--bg-elevated);
