@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>MyContextAI — Personal RAG Platform | Mohd. Musheer</title>
+  <meta name="title" content="MyContextAI — Personal RAG Platform | Mohd. Musheer">
+  <meta name="description" content="MyContextAI is a Dockerized personal RAG platform that indexes GitHub, portfolios, resumes, blogs, and custom URLs to build personalized AI assistants.">
+  <meta name="keywords" content="MyContextAI, personal RAG, AI assistant, ChromaDB, FastAPI, OpenRouter, Docker, semantic search, GitHub ingestion, portfolio crawler, Mohd Musheer">
+  <meta name="author" content="Mohd. Musheer">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://musheer.me/projects/mycontextai.html">
+  <meta name="theme-color" content="#4F46E5">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://musheer.me/projects/mycontextai.html">
+  <meta property="og:title" content="MyContextAI — Personal RAG Platform | Mohd. Musheer">
+  <meta property="og:description" content="A Dockerized personal RAG platform that creates personalized AI assistants from public online information.">
+  <meta property="og:image" content="https://musheer.me/assets/images/favicon.svg">
+  <meta property="og:image:width" content="400">
+  <meta property="og:image:height" content="400">
+  <meta property="og:image:alt" content="Mohd. Musheer — MyContextAI project">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Mohd. Musheer — AI/ML Engineer Portfolio">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://musheer.me/projects/mycontextai.html">
+  <meta name="twitter:title" content="MyContextAI — Personal RAG Platform | Mohd. Musheer">
+  <meta name="twitter:description" content="Build a personalized AI assistant from GitHub, portfolios, resumes, blogs, and custom URLs.">
+  <meta name="twitter:image" content="https://musheer.me/assets/images/favicon.svg">
+  <meta name="twitter:image:alt" content="Mohd. Musheer — MyContextAI project">
+
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "MyContextAI",
+    "description": "A Dockerized personal RAG system that collects public information from online sources, stores embeddings in ChromaDB, and answers questions through a FastAPI API and web interface.",
+    "author": { "@type": "Person", "name": "Mohd. Musheer", "url": "https://musheer.me" },
+    "programmingLanguage": ["Python"],
+    "codeRepository": "https://github.com/mohd-musheer/MyContextAI",
+    "runtimePlatform": "Docker",
+    "operatingSystem": "Cross-platform",
+    "license": "https://opensource.org/licenses/MIT",
+    "keywords": "personal RAG, ChromaDB, FastAPI, OpenRouter, semantic retrieval, AI assistant"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ======== NAVIGATION ======== -->
+  <nav class="nav project-nav" id="nav">
+    <div class="container nav-inner">
+      <a href="/" class="nav-logo">Mohd. Musheer</a>
+      <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <a href="/" class="btn btn-ghost">&larr; Back to Portfolio</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ======== PROJECT HERO ======== -->
+    <section class="project-page-hero">
+      <div class="container">
+        <span class="hero-label">Personal RAG</span>
+        <h1>MyContextAI</h1>
+        <p class="project-tagline">Personal RAG Platform for Building AI Assistants from Online Presence</p>
+        <p class="project-tagline" style="font-size: 0.9375rem; max-width: 720px;">An AI-powered Retrieval-Augmented Generation platform that automatically indexes GitHub repositories, portfolios, resumes, blogs, and custom websites to build personalized AI assistants.</p>
+        <div class="project-actions">
+          <a href="https://github.com/mohd-musheer/MyContextAI" class="btn btn-primary" target="_blank" rel="noopener">View GitHub</a>
+          <a href="#architecture" class="btn btn-outline">Architecture</a>
+          <a href="#tech-stack" class="btn btn-ghost">Tech Stack</a>
+        </div>
+        <div class="arch-diagram" style="position: relative; margin-bottom: 0;">
+          <div class="arch-box"><div class="arch-box-title">Public Sources</div><div class="arch-box-desc">GitHub, portfolio, resume, blogs, and URLs</div></div>
+          <span class="arch-arrow">&rarr;</span>
+          <div class="arch-box"><div class="arch-box-title">Personal Knowledge</div><div class="arch-box-desc">Chunked documents and persistent embeddings</div></div>
+          <span class="arch-arrow">&rarr;</span>
+          <div class="arch-box"><div class="arch-box-title">AI Assistant</div><div class="arch-box-desc">Semantic retrieval with OpenRouter answers</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== METRICS BAR ======== -->
+    <section class="project-metrics-bar">
+      <div class="container">
+        <div class="metrics-row">
+          <div class="metric-tile"><span class="metric-tile-value">Multi-source</span><span class="metric-tile-label">Ingestion</span></div>
+          <div class="metric-tile"><span class="metric-tile-value">Persistent</span><span class="metric-tile-label">Storage</span></div>
+          <div class="metric-tile"><span class="metric-tile-value">Semantic</span><span class="metric-tile-label">Retrieval</span></div>
+          <div class="metric-tile"><span class="metric-tile-value">Production</span><span class="metric-tile-label">Ready</span></div>
+          <div class="metric-tile"><span class="metric-tile-value">Docker</span><span class="metric-tile-label">Deployment</span></div>
+          <div class="metric-tile"><span class="metric-tile-value">REST API</span><span class="metric-tile-label">FastAPI</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== PROJECT CONTENT ======== -->
+    <div class="project-content">
+      <div class="container container-narrow">
+        <h2>Overview</h2>
+        <p>MyContextAI is a Dockerized Personal RAG platform that builds a knowledge base from a person's public online presence. It automatically ingests repositories, portfolio pages, resumes, blogs, and custom URLs; processes the collected documents; and stores their embeddings in persistent ChromaDB vector storage.</p>
+        <p>Through semantic search, a retriever selects relevant context for OpenRouter LLM responses. The result is a personalized AI assistant available through an interactive web UI or FastAPI REST API, with Docker deployment for repeatable production environments.</p>
+
+        <h2 id="tech-stack">Technology Stack</h2>
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">ChromaDB</span><span class="tag">OpenRouter</span><span class="tag">Docker</span><span class="tag">Playwright</span><span class="tag">BeautifulSoup</span><span class="tag">Trafilatura</span><span class="tag">PyMuPDF</span>
+        </div>
+
+        <h2>Features</h2>
+        <div class="algo-grid">
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">GitHub Repository Ingestion</span></div><p class="algo-impl">Extracts repository names, descriptions, and README files.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Portfolio Crawling</span></div><p class="algo-impl">Crawls home, internal, project, and about pages from a portfolio website.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Resume PDF Parsing</span></div><p class="algo-impl">Processes public, GitHub-hosted, and direct resume PDF links.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Blog Extraction</span></div><p class="algo-impl">Ingests articles from Medium, Hashnode, Dev.to, WordPress, and personal blogs.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Custom URL Support</span></div><p class="algo-impl">Collects content from Devpost, project showcases, research pages, and hackathon submissions.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Document Chunking</span></div><p class="algo-impl">Prepares collected information as retrieval-ready document chunks.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Embedding Generation</span></div><p class="algo-impl">Converts chunks into vector representations for semantic retrieval.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Semantic Retrieval</span></div><p class="algo-impl">Selects relevant personal context for questions asked of the assistant.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Persistent ChromaDB</span></div><p class="algo-impl">Retains the vector database, embeddings, and metadata between restarts.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">FastAPI REST API</span></div><p class="algo-impl">Provides an API endpoint for asking questions against the indexed knowledge base.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Docker Deployment</span></div><p class="algo-impl">Packages the application and persistent data mounts for repeatable deployment.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Interactive Web UI</span></div><p class="algo-impl">Lets users interact with the generated assistant in the browser.</p></div>
+        </div>
+
+        <h2 id="architecture">Architecture</h2>
+        <p>The architecture transforms configured public information into an answerable personal knowledge base. Every card uses the portfolio's existing interactive card transitions and remains readable across screen sizes.</p>
+        <div class="arch-diagram" style="flex-direction: column;">
+          <div class="arch-box"><div class="arch-box-title">info.json</div><div class="arch-box-desc">Defines the person and publicly accessible sources to index</div></div>
+          <span class="arch-arrow" style="transform: none;">&darr;</span>
+          <div class="arch-box"><div class="arch-box-title">Collectors</div><div class="arch-box-desc">Fetch GitHub, portfolio, resume, blog, and custom URL content</div></div>
+          <span class="arch-arrow" style="transform: none;">&darr;</span>
+          <div class="arch-box"><div class="arch-box-title">Documents</div><div class="arch-box-desc">Normalize the collected public information</div></div>
+          <span class="arch-arrow" style="transform: none;">&darr;</span>
+          <div class="arch-box"><div class="arch-box-title">Chunking</div><div class="arch-box-desc">Split documents into retrieval-ready passages</div></div>
+          <span class="arch-arrow" style="transform: none;">&darr;</span>
+          <div class="arch-box"><div class="arch-box-title">Embeddings</div><div class="arch-box-desc">Generate semantic representations of the content</div></div>
+          <span class="arch-arrow" style="transform: none;">&darr;</span>
+          <div class="arch-box"><div class="arch-box-title">ChromaDB</div><div class="arch-box-desc">Persist vector embeddings and metadata</div></div>
+          <span class="arch-arrow" style="transform: none;">&darr;</span>
+          <div class="arch-box"><div class="arch-box-title">Retriever</div><div class="arch-box-desc">Find context relevant to the user's question</div></div>
+          <span class="arch-arrow" style="transform: none;">&darr;</span>
+          <div class="arch-box"><div class="arch-box-title">OpenRouter LLM</div><div class="arch-box-desc">Generate an answer grounded in retrieved context</div></div>
+          <span class="arch-arrow" style="transform: none;">&darr;</span>
+          <div class="arch-box"><div class="arch-box-title">Answer</div><div class="arch-box-desc">Return a personalized response through the API or web UI</div></div>
+        </div>
+
+        <h2>Data Sources</h2>
+        <div class="algo-grid">
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">GitHub</span></div><p class="algo-impl">Repository names, repository descriptions, and README files.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Portfolio</span></div><p class="algo-impl">Home, internal, project, and about page content.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Resume</span></div><p class="algo-impl">Text from public, GitHub-hosted, or direct PDF resume links.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Blogs</span></div><p class="algo-impl">Published articles from supported blogging platforms and personal sites.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Custom URLs</span></div><p class="algo-impl">Project, research, product, Devpost, and hackathon page information.</p></div>
+        </div>
+
+        <h2>Workflow</h2>
+        <p>The first startup builds the vector database; later starts load ChromaDB and skip re-indexing before serving the API.</p>
+        <div class="arch-diagram" style="flex-wrap: wrap; justify-content: center;">
+          <div class="arch-box"><div class="arch-box-title">User Information</div></div><span class="arch-arrow">&rarr;</span>
+          <div class="arch-box"><div class="arch-box-title">Automatic Crawling</div></div><span class="arch-arrow">&rarr;</span>
+          <div class="arch-box"><div class="arch-box-title">Document Processing</div></div><span class="arch-arrow">&rarr;</span>
+          <div class="arch-box"><div class="arch-box-title">Chunking</div></div><span class="arch-arrow">&rarr;</span>
+          <div class="arch-box"><div class="arch-box-title">Embeddings</div></div><span class="arch-arrow">&rarr;</span>
+          <div class="arch-box"><div class="arch-box-title">Vector Database</div></div><span class="arch-arrow">&rarr;</span>
+          <div class="arch-box"><div class="arch-box-title">Question Answering</div></div><span class="arch-arrow">&rarr;</span>
+          <div class="arch-box"><div class="arch-box-title">AI Response</div></div>
+        </div>
+
+        <h2>Folder Structure</h2>
+        <div class="code-label">MyContextAI</div>
+        <div class="code-block"><pre>MyContextAI
+├── app
+│   ├── api
+│   ├── collectors
+│   ├── config
+│   ├── ingestion
+│   ├── llm
+│   ├── rag
+│   ├── vectordb
+│   ├── static
+│   ├── templates
+│   ├── startup.py
+│   └── main.py
+├── data
+│   ├── cache
+│   └── chroma
+├── requirements.txt
+├── Dockerfile
+└── README.md</pre></div>
+
+        <h2>Example Questions</h2>
+        <div class="algo-grid">
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Education</span></div><p class="algo-impl">“Tell me about Musheer's education.”</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Projects</span></div><p class="algo-impl">“What projects has Musheer built?”</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">VectorForgeML</span></div><p class="algo-impl">“Explain VectorForgeML.”</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Experience</span></div><p class="algo-impl">“Summarize Musheer's experience.”</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Technologies</span></div><p class="algo-impl">“What technologies does Musheer use?”</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">KnowledgeVault AI</span></div><p class="algo-impl">“What is KnowledgeVault AI?”</p></div>
+        </div>
+
+        <h2>Docker Deployment</h2>
+        <p>Docker mounts the configuration file and data directory so the assistant can retain its indexed knowledge between container runs.</p>
+        <div class="code-examples-grid">
+          <div><div class="code-label">Build image</div><div class="code-block"><pre>docker build -t mycontextai .</pre></div></div>
+          <div><div class="code-label">Run with persistent storage</div><div class="code-block"><pre>docker run `
+  -p 8000:8000 `
+  -v "${PWD}\app\info.json:/app/info.json" `
+  -v "${PWD}\data:/app/data" `
+  -e OPENROUTER_API_KEY="YOUR_API_KEY" `
+  mycontextai</pre></div></div>
+        </div>
+        <p><strong>Persistent storage:</strong> <code>data/chroma</code> holds the ChromaDB database, vector embeddings, and metadata, while <code>data/cache</code> stores temporary cache files and downloaded assets.</p>
+
+        <h2>REST API</h2>
+        <div class="algo-grid">
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">POST /ask</span><span class="algo-type supervised">Endpoint</span></div><p class="algo-impl">Ask a question of the assistant using the indexed personal knowledge base.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Request JSON</span></div><div class="code-block"><pre>{
+  "question": "Tell me about Musheer's projects"
+}</pre></div></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Response JSON</span></div><div class="code-block"><pre>{
+  "answer": "..."
+}</pre></div></div>
+        </div>
+
+        <h2>Performance</h2>
+        <div class="algo-grid">
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Multi-source Ingestion</span></div><p class="algo-impl">Collects context across configured public information sources.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Persistent Storage</span></div><p class="algo-impl">Reuses existing ChromaDB on subsequent startups.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Semantic Retrieval</span></div><p class="algo-impl">Uses embeddings to surface question-relevant information.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Production Ready</span></div><p class="algo-impl">Offers a web UI, FastAPI API, and containerized deployment.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Dockerized</span></div><p class="algo-impl">Packages the application with portable runtime configuration.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">REST API</span></div><p class="algo-impl">Exposes question answering through a focused HTTP interface.</p></div>
+        </div>
+
+        <h2>Future Roadmap</h2>
+        <ol>
+          <li>Authentication and multi-user support</li>
+          <li>Streaming responses and conversation memory</li>
+          <li>Hybrid search, reranking, and source citations</li>
+          <li>Incremental indexing and background jobs</li>
+          <li>Kubernetes deployment</li>
+        </ol>
+
+        <h2>Technologies</h2>
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">ChromaDB</span><span class="tag">OpenRouter</span><span class="tag">Docker</span><span class="tag">Playwright</span><span class="tag">BeautifulSoup</span><span class="tag">Trafilatura</span><span class="tag">PyMuPDF</span>
+        </div>
+
+        <h2>Project Highlights</h2>
+        <div class="algo-grid">
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Multi-source Knowledge Base</span></div><p class="algo-impl">Unifies public repositories, sites, PDFs, blogs, and custom pages.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Persistent Vector Storage</span></div><p class="algo-impl">Stores ChromaDB data and metadata across application starts.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Semantic Search</span></div><p class="algo-impl">Retrieves the context needed to answer personal knowledge questions.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">REST API</span></div><p class="algo-impl">Delivers answers through a concise FastAPI endpoint.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Docker Ready</span></div><p class="algo-impl">Supports repeatable local and production deployment.</p></div>
+          <div class="algo-card"><div class="algo-header"><span class="algo-name">Production Architecture</span></div><p class="algo-impl">Separates collection, ingestion, retrieval, vector storage, and LLM layers.</p></div>
+        </div>
+
+        <nav class="project-cta" aria-label="Project navigation">
+          <a href="/" class="btn btn-outline">&larr; Back to Portfolio</a>
+          <a href="codeshield-ai.html" class="btn btn-ghost" aria-label="Previous project: CodeShield AI">&larr; Previous Project</a>
+          <a href="vectorforgeml.html" class="btn btn-ghost" aria-label="Next project: VectorForgeML">Next Project &rarr;</a>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Mohd. Musheer. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/mohd-musheer" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/mohdmusheer" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.kaggle.com/almusheer" target="_blank" rel="noopener">Kaggle</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  (function() {
+    var stored = localStorage.getItem('theme');
+    if (stored) document.documentElement.setAttribute('data-theme', stored);
+    var toggle = document.getElementById('theme-toggle');
+    if (toggle) toggle.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'light' ? 'dark' : 'light';
+      if (next === 'dark') {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+    var nav = document.getElementById('nav');
+    if (nav) {
+      var ticking = false;
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          requestAnimationFrame(function() {
+            nav.classList.toggle('scrolled', window.scrollY > 0);
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+    }
+  })();
+  </script>
+</body>
+</html>
