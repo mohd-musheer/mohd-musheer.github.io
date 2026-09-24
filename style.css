@@ -1053,6 +1053,14 @@ pre code {
   margin-bottom: var(--space-1);
 }
 
+.about-resume-row,
+.contact-resume-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+
 /* --- 6c. Skills --- */
 .skills-grid {
   display: grid;
@@ -1135,6 +1143,40 @@ pre code {
 }
 
 /* --- 6d. Projects --- */
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  justify-content: center;
+  margin-bottom: var(--space-8);
+}
+
+.filter-btn {
+  appearance: none;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-full);
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  padding: 9px 15px;
+  min-height: 40px;
+  font: 600 0.8125rem/1 var(--font-body);
+  cursor: pointer;
+  transition: color var(--transition-fast), background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.project-featured.is-hidden,
+.project-card.is-hidden {
+  display: none;
+}
+
 .project-featured {
   margin-bottom: var(--space-10);
   background: var(--bg-elevated);
@@ -1347,6 +1389,115 @@ pre code {
 .card-icon svg {
   width: 18px;
   height: 18px;
+}
+
+/* --- 6d.1 .NET showcase --- */
+.dotnet-section {
+  background: linear-gradient(135deg, rgba(14, 116, 144, 0.09), rgba(79, 70, 229, 0.06));
+}
+
+.dotnet-intro {
+  max-width: 760px;
+  margin: 0 auto var(--space-8);
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.dotnet-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.dotnet-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.dotnet-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.dotnet-stack-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: auto 0 var(--space-4);
+}
+
+.tag-dotnet {
+  color: #a5f3fc;
+  border-color: rgba(34, 211, 238, 0.45);
+  background: rgba(8, 145, 178, 0.14);
+}
+
+.dotnet-capabilities {
+  margin-top: var(--space-10);
+}
+
+.dotnet-capabilities > h3 {
+  margin-bottom: var(--space-4);
+}
+
+.dotnet-caps-grid,
+.achievements-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.cap-item,
+.achievement-card {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.cap-icon,
+.achievement-icon {
+  flex: 0 0 auto;
+  font-size: 1.35rem;
+}
+
+.cap-item strong,
+.achievement-body h4 {
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+.cap-item p,
+.achievement-body p {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.achievement-card {
+  transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.achievement-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-border);
+  box-shadow: var(--shadow-md);
+}
+
+.achievement-link {
+  display: inline-block;
+  margin-top: var(--space-3);
+  color: var(--accent);
+  font-size: 0.8125rem;
+  font-weight: 600;
 }
 
 /* --- 6e. Internship --- */
@@ -2268,6 +2419,12 @@ pre code {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .dotnet-grid,
+  .dotnet-caps-grid,
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .internship-header {
     flex-direction: row;
     justify-content: space-between;
@@ -2345,6 +2502,29 @@ pre code {
 
 /* Mobile breakpoint: max-width 767px */
 @media (max-width: 767px) {
+  .project-filters {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 2px 0 var(--space-2);
+    scrollbar-width: thin;
+  }
+
+  .filter-btn {
+    flex: 0 0 auto;
+  }
+
+  .about-resume-row,
+  .contact-resume-row {
+    flex-direction: column;
+  }
+
+  .about-resume-row .btn,
+  .contact-resume-row .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
   .hero {
     min-height: auto;
     padding-top: calc(64px + var(--space-6));
@@ -2435,6 +2615,10 @@ pre code {
     width: calc(100vw - 32px);
     right: -8px;
     bottom: 65px;
+  }
+
+  .dotnet-card-header {
+    flex-direction: column;
   }
 }
 

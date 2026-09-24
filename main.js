@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initNavbar();
   initScrollReveal();
   initActiveNavLink();
+  initProjectFilters();
   initGitHub();
   initChatbot();
 });
@@ -143,6 +144,36 @@ function initActiveNavLink() {
   }, { rootMargin: '-20% 0px -70% 0px' });
 
   sections.forEach(function (section) { observer.observe(section); });
+}
+
+/* ============================================
+   5. PROJECT FILTERS
+   ============================================ */
+function initProjectFilters() {
+  var filters = document.querySelectorAll('.filter-btn');
+  var projects = document.querySelectorAll('.project-featured[data-category], .project-card[data-category]');
+  if (!filters.length || !projects.length) return;
+
+  filters.forEach(function (filter) {
+    filter.addEventListener('click', function () {
+      var category = filter.getAttribute('data-filter');
+      filters.forEach(function (item) {
+        var isActive = item === filter;
+        item.classList.toggle('active', isActive);
+        item.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+
+      projects.forEach(function (project) {
+        var categories = (project.getAttribute('data-category') || '').split(/\s+/);
+        var visible = category === 'all' || categories.indexOf(category) !== -1;
+        project.classList.toggle('is-hidden', !visible);
+        project.setAttribute('aria-hidden', visible ? 'false' : 'true');
+      });
+    });
+  });
+
+  var defaultFilter = document.querySelector('.filter-btn.active');
+  if (defaultFilter) defaultFilter.click();
 }
 
 /* ============================================
@@ -378,7 +409,7 @@ var CHATBOT_KB = [
   },
   {
     keys: ['education', 'college', 'university', 'degree', 'study'],
-    reply: 'Musheer is pursuing a BCA at Sant Gadge Baba Amravati University, Maharashtra, India, with expected graduation in May 2026.'
+    reply: 'Musheer completed a Bachelor of Computer Applications (BCA) at Takshashila Mahavidyalaya, Amravati, with a CGPA of 8.09 / 10.'
   },
   {
     keys: ['contact', 'email', 'reach', 'hire'],
